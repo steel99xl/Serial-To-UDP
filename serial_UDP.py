@@ -17,7 +17,7 @@ def Main():
 
     #Read Serial Port and Send Data Over UDP
 
-    while true:
+    while True:
         DATA = ser.readline()
         client.sendto(DATA,(target_server, target_port))
 
